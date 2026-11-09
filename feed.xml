@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KI-Wochenpodcast</title>
+    <link>https://kai-hilker.github.io/ki-podcast/</link>
+    <description>Wöchentlicher Überblick über die wichtigsten KI-News – privat für Kai Hilker.</description>
+    <language>de</language>
+    <copyright>© Kai Hilker</copyright>
+    <lastBuildDate>Sun, 08 Nov 2026 08:00:00 +0100</lastBuildDate>
+    <atom:link href="https://kai-hilker.github.io/ki-podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Kai Hilker</itunes:author>
+    <itunes:summary>Wöchentlicher Überblick über die wichtigsten KI-News – privat für Kai Hilker.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Kai Hilker</itunes:name>
+      <itunes:email>kai.hilker@icloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:block>Yes</itunes:block>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://kai-hilker.github.io/ki-podcast/cover.jpg"/>
+    <image>
+      <url>https://kai-hilker.github.io/ki-podcast/cover.jpg</url>
+      <title>KI-Wochenpodcast</title>
+      <link>https://kai-hilker.github.io/ki-podcast/</link>
+    </image>
+
+    <item>
+      <title>KI-Wochenpodcast – 8. November 2026</title>
+      <description>OpenAI stellt GPT-6 Cyber vor und stuft es selbst als kritisch ein; dazu frische Anthropic-Zahlen, ein chinesisches Open-Weight-Modell, günstigere KI-Videos von Google und politische Turbulenzen an den Börsen.</description>
+      <content:encoded><![CDATA[<p>OpenAI stellt GPT-6 Cyber vor und stuft es selbst als kritisch ein; dazu frische Anthropic-Zahlen, ein chinesisches Open-Weight-Modell, günstigere KI-Videos von Google und politische Turbulenzen an den Börsen.</p>]]></content:encoded>
+      <pubDate>Sun, 08 Nov 2026 08:00:00 +0100</pubDate>
+      <guid isPermaLink="false">ki-wochenpodcast-2026-11-08</guid>
+      <enclosure url="https://kai-hilker.github.io/ki-podcast/episodes/KI-Wochenpodcast_2026-11-08.mp3" length="6060672" type="audio/mpeg"/>
+      <itunes:title>KI-Wochenpodcast – 8. November 2026</itunes:title>
+      <itunes:author>Kai Hilker</itunes:author>
+      <itunes:duration>16:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:summary>OpenAI stellt GPT-6 Cyber vor und stuft es selbst als kritisch ein; dazu frische Anthropic-Zahlen, ein chinesisches Open-Weight-Modell, günstigere KI-Videos von Google und politische Turbulenzen an den Börsen.</itunes:summary>
+      <itunes:image href="https://kai-hilker.github.io/ki-podcast/cover.jpg"/>
+    </item>
+
+    <item>
+      <title>KI-Wochenpodcast – 1. November 2026</title>
+      <description>Anthropic reicht den Börsenantrag ein, Google zeigt Gemini 4 Carbon zunächst nur Sicherheitsexperten, und aus China kommen Modelle, die bei einzelnen Tests schon nah an die US-Spitze herankommen – plus die teuren Quartalszahlen der Tech-Konzerne.</description>
+      <content:encoded><![CDATA[<p>Anthropic reicht den Börsenantrag ein, Google zeigt Gemini 4 Carbon zunächst nur Sicherheitsexperten, und aus China kommen Modelle, die bei einzelnen Tests schon nah an die US-Spitze herankommen – plus die teuren Quartalszahlen der Tech-Konzerne.</p>]]></content:encoded>
+      <pubDate>Sun, 01 Nov 2026 08:00:00 +0100</pubDate>
+      <guid isPermaLink="false">ki-wochenpodcast-2026-11-01</guid>
+      <enclosure url="https://kai-hilker.github.io/ki-podcast/episodes/KI-Wochenpodcast_2026-11-01.mp3" length="5996016" type="audio/mpeg"/>
+      <itunes:title>KI-Wochenpodcast – 1. November 2026</itunes:title>
+      <itunes:author>Kai Hilker</itunes:author>
+      <itunes:duration>16:39</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:summary>Anthropic reicht den Börsenantrag ein, Google zeigt Gemini 4 Carbon zunächst nur Sicherheitsexperten, und aus China kommen Modelle, die bei einzelnen Tests schon nah an die US-Spitze herankommen – plus die teuren Quartalszahlen der Tech-Konzerne.</itunes:summary>
+      <itunes:image href="https://kai-hilker.github.io/ki-podcast/cover.jpg"/>
+    </item>
+  </channel>
+</rss>
