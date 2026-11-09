@@ -70,16 +70,19 @@ def ffprobe_duration(path: Path) -> float:
     return float(out)
 
 
+SHOW = "KI-Wochenpodcast"
+
+
 def episode_filename(date: datetime) -> str:
-    return f"KI-Wochenpodcast_{date.strftime('%Y-%m-%d')}.mp3"
+    return f"{SHOW}_{date.strftime('%Y-%m-%d')}.mp3"
 
 
 def build_item(date: datetime, filename: str, length: int, duration: str, description: str) -> ET.Element:
-    title = f"KI-Wochenpodcast – {german_date(date)}"
-    guid = f"ki-wochenpodcast-{date.strftime('%Y-%m-%d')}"
+    title = f"{SHOW} – {german_date(date)}"
+    guid = f"{SHOW.lower()}-{date.strftime('%Y-%m-%d')}"
     url = f"{BASE_URL}/episodes/{filename}"
     cover = f"{BASE_URL}/cover.jpg"
-    pub = rfc2822(date.replace(hour=8, minute=0, second=0, microsecond=0, tzinfo=BERLIN))
+    pub = rfc2822(date.replace(hour=6, minute=45, second=0, microsecond=0, tzinfo=BERLIN))
 
     item = ET.Element("item")
     ET.SubElement(item, "title").text = title
@@ -110,9 +113,9 @@ def build_item(date: datetime, filename: str, length: int, duration: str, descri
 def insert_item_into_feed(description: str, date: datetime, filename: str, length: int, duration: str) -> str:
     """Insert new item after channel metadata using regex-friendly text edit to preserve formatting."""
     text = FEED_PATH.read_text(encoding="utf-8")
-    pub = rfc2822(date.replace(hour=8, minute=0, second=0, microsecond=0, tzinfo=BERLIN))
-    title = f"KI-Wochenpodcast – {german_date(date)}"
-    guid = f"ki-wochenpodcast-{date.strftime('%Y-%m-%d')}"
+    pub = rfc2822(date.replace(hour=6, minute=45, second=0, microsecond=0, tzinfo=BERLIN))
+    title = f"{SHOW} – {german_date(date)}"
+    guid = f"{SHOW.lower()}-{date.strftime('%Y-%m-%d')}"
     url = f"{BASE_URL}/episodes/{filename}"
     cover = f"{BASE_URL}/cover.jpg"
     # Escape description for XML text (minimal)
@@ -172,8 +175,11 @@ def main() -> int:
     p.add_argument("--mp3", required=True, help="Path to the episode MP3")
     p.add_argument("--date", required=True, help="Episode date YYYY-MM-DD")
     p.add_argument("--description", required=True, help="Short German episode description")
+    p.add_argument("--show", default="KI-Wochenpodcast", help="Show name, e.g. KI-Wochenpodcast or Europa-Wochenpodcast")
     p.add_argument("--dry-run", action="store_true", help="Do everything except write/commit/push")
     args = p.parse_args()
+    global SHOW
+    SHOW = args.show
 
     try:
         date = datetime.strptime(args.date, "%Y-%m-%d")
@@ -196,8 +202,8 @@ def main() -> int:
     print(f"destination  : {dest}")
     print(f"byte length  : {length}")
     print(f"duration     : {duration}")
-    print(f"title        : KI-Wochenpodcast – {german_date(date)}")
-    print(f"pubDate      : {rfc2822(date.replace(hour=8, minute=0, second=0, microsecond=0, tzinfo=BERLIN))}")
+    print(f"title        : {SHOW} – {german_date(date)}")
+    print(f"pubDate      : {rfc2822(date.replace(hour=6, minute=45, second=0, microsecond=0, tzinfo=BERLIN))}")
 
     if args.dry_run:
         print("--dry-run: not writing files, not committing")
