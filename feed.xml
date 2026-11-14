@@ -9,7 +9,7 @@
     <description>Kais wöchentliche Podcasts: KI-News (sonntags) und Europa – Verteidigung, Wirtschaft, Politik (samstags). Privat für Kai Hilker.</description>
     <language>de</language>
     <copyright>© Kai Hilker</copyright>
-    <lastBuildDate>Sun, 08 Nov 2026 08:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 06:45:00 +0100</lastBuildDate>
     <atom:link href="https://kai-hilker.github.io/ki-podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>Kai Hilker</itunes:author>
     <itunes:summary>Kais wöchentliche Podcasts: KI-News (sonntags) und Europa – Verteidigung, Wirtschaft, Politik (samstags). Privat für Kai Hilker.</itunes:summary>
@@ -26,6 +26,21 @@
       <title>Kai Podcast Serie</title>
       <link>https://kai-hilker.github.io/ki-podcast/</link>
     </image>
+
+    <item>
+      <title>Europa-Wochenpodcast – 14. November 2026</title>
+      <description>Europa will bei den Ukraine-Gesprächen mitreden: EU-Gipfel in Dublin, Rekordausgaben für Verteidigung, Streit um die Stromsteuer im Bundestag, die Lagarde-Nachfolge bei der EZB und der gescheiterte Haushalt in Frankreich.</description>
+      <content:encoded><![CDATA[<p>Europa will bei den Ukraine-Gesprächen mitreden: EU-Gipfel in Dublin, Rekordausgaben für Verteidigung, Streit um die Stromsteuer im Bundestag, die Lagarde-Nachfolge bei der EZB und der gescheiterte Haushalt in Frankreich.</p>]]></content:encoded>
+      <pubDate>Sat, 14 Nov 2026 06:45:00 +0100</pubDate>
+      <guid isPermaLink="false">europa-wochenpodcast-2026-11-14</guid>
+      <enclosure url="https://kai-hilker.github.io/ki-podcast/episodes/Europa-Wochenpodcast_2026-11-14.mp3" length="13201652" type="audio/mpeg"/>
+      <itunes:title>Europa-Wochenpodcast – 14. November 2026</itunes:title>
+      <itunes:author>Kai Hilker</itunes:author>
+      <itunes:duration>27:30</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:summary>Europa will bei den Ukraine-Gesprächen mitreden: EU-Gipfel in Dublin, Rekordausgaben für Verteidigung, Streit um die Stromsteuer im Bundestag, die Lagarde-Nachfolge bei der EZB und der gescheiterte Haushalt in Frankreich.</itunes:summary>
+      <itunes:image href="https://kai-hilker.github.io/ki-podcast/cover.jpg"/>
+    </item>
 
     <item>
       <title>KI-Wochenpodcast – 8. November 2026</title>
